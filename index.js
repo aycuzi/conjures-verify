@@ -98,22 +98,34 @@ app.get("/privacy", (_req, res) => {
 			"Privacy Policy",
 			`<h1>Privacy Policy</h1>
 			<p>Last updated: ${new Date().toISOString().slice(0, 10)}</p>
-			<p>Conjures Verify ("this service") links a Discord account to a Roblox account for the Conjures Discord community.</p>
-			<h2>What we collect</h2>
+			<p>Our privacy policy is simple. Conjures Verify only collects and stores the information necessary to provide Roblox account verification.</p>
+
+			<h2>Information We Collect</h2>
 			<ul>
-				<li>Your Roblox user ID, username, and display name (via Roblox's OAuth "openid profile" scope).</li>
-				<li>Your Discord user ID (passed through the OAuth flow from Discord, never entered here).</li>
+				<li>Your Roblox User ID, username, and display name provided through Roblox OAuth.</li>
+				<li>Your Discord User ID, provided by the Conjures verification system.</li>
 			</ul>
-			<h2>What we don't collect</h2>
-			<p>We never see your Roblox or Discord password, email, payment information, or any data beyond the public profile fields listed above. We do not use cookies or browser storage.</p>
-			<h2>Our Commitment</h2>
-			<p>Our privacy policy is simple. We do not collect any personal information from you. We do not use long term cookies. We do not track you. We do not store any information about you apart from your Roblox UserId and Discord UserId. We do not share any information about you with anyone. We do not sell any information about you to anyone.</p>
-			<h2>How it's used</h2>
-			<p>The linked Roblox user ID and username are stored so the Conjures Discord bot can assign a "Verified" role, set your Discord nickname to your Roblox username, and look up your in-game stats (coins, wins, inventory) for commands like <code>/my roblox</code>.</p>
-			<h2>Retention</h2>
-			<p>Your link is stored until you unlink your account (via the bot's unlink button) or a server administrator removes it.</p>
+
+			<h2>How We Use Your Information</h2>
+			<p>We use this information to link your Roblox account to your Discord account, verify your identity within the Conjures community, assign Discord roles, set your Discord nickname, and provide related Conjures services.</p>
+
+			<h2>What We Don't Collect</h2>
+			<p>We do not collect or store your Roblox password, Discord password, payment information, or authentication credentials.</p>
+
+			<h2>Cookies and Tracking</h2>
+			<p>We do not use long-term cookies, advertising trackers, or tracking technologies for advertising purposes.</p>
+
+			<h2>Sharing</h2>
+			<p>We do not sell your information or share it with unrelated third parties for advertising or marketing purposes. Information may be processed by services necessary to operate Conjures Verify, such as Roblox, Discord, hosting, and database infrastructure.</p>
+
+			<h2>Data Retention</h2>
+			<p>Your Roblox and Discord account association is stored while necessary to provide Conjures verification services. You may request that your account association be removed by contacting aycuzi.</p>
+
+			<h2>Changes</h2>
+			<p>This Privacy Policy may be updated from time to time. Continued use of the Service after changes are published constitutes acceptance of the updated policy.</p>
+
 			<h2>Contact</h2>
-			<p>Questions can be directed to the application owner, aycuzi on Roblox.</p>`
+			<p>Questions or requests regarding this Privacy Policy may be directed to aycuzi.</p>`
 		)
 	);
 });
@@ -124,14 +136,23 @@ app.get("/terms", (_req, res) => {
 			"Terms of Service",
 			`<h1>Terms of Service</h1>
 			<p>Last updated: ${new Date().toISOString().slice(0, 10)}</p>
-			<p>By using Conjures Verify to link your Roblox account, you agree to the following:</p>
+			<p>By using Conjures Verify, you agree to the following terms:</p>
+
 			<ul>
-				<li>You are linking your own Roblox account, one you are authorized to use.</li>
-				<li>Conjures server staff may unlink or re-link accounts at their discretion to enforce server rules.</li>
-				<li>This service is provided as-is, with no guarantee of uptime, for the sole purpose of supporting the Conjures Discord community.</li>
-				<li>Misuse (attempting to link accounts you don't own, exploiting the OAuth flow) may result in a ban from the Conjures Discord server and/or Roblox group.</li>
+				<li>You will only use the Service to link a Roblox account that you own or are authorized to use.</li>
+				<li>You will not use the Service to violate Roblox's Terms of Use, Community Standards, Creator Third-Party App Policy, or any other Roblox rules or policies.</li>
+				<li>You will not use the Service to violate Discord's Terms of Service, Community Guidelines, or any other Discord rules or policies.</li>
+				<li>You will not use the Service to violate any applicable laws or regulations.</li>
+				<li>You will not use the Service to violate the terms, rules, or policies of any other service used in connection with Conjures.</li>
+				<li>You will not attempt to access, link, or use another person's Roblox or Discord account without authorization.</li>
+				<li>You will not exploit, abuse, interfere with, or attempt to circumvent the security or authentication systems of Conjures, Roblox, Discord, or any related service.</li>
+				<li>Conjures staff may unlink or relink accounts when reasonably necessary to enforce community rules, investigate abuse, correct errors, or maintain the Service.</li>
+				<li>Violations of these Terms may result in restriction or termination of access to Conjures Verify and may result in moderation action within the Conjures Discord community or Roblox group.</li>
+				<li>Conjures Verify is an independent third-party service and is not operated by, affiliated with, endorsed by, or sponsored by Roblox Corporation or Discord Inc.</li>
+				<li>The Service is provided as-is and as-available without a guarantee of continuous uptime or error-free operation.</li>
 			</ul>
-			<p>These terms may change at any time; continued use after a change constitutes acceptance.</p>`
+
+			<p>These Terms may be updated or changed at any time. Continued use of the Service after changes are published constitutes acceptance of the updated Terms.</p>`
 		)
 	);
 });
