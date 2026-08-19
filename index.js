@@ -733,8 +733,7 @@ app.get("/callback", async (req, res) => {
 
 					<p>
 						Your Roblox account has been authenticated
-						successfully. No Discord account has been linked
-						through this public entry flow.
+						successfully.
 					</p>
 
 					<p style="margin-top: 24px;">
