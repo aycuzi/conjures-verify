@@ -1520,7 +1520,7 @@ app.get("/callback", async (req, res) => {
 						<strong>Important</strong>
 
 						<p style="margin-bottom: 0;">
-							Submitting this request asks Conjures staff
+							Submitting this request will proceed
 							to process the deletion of data associated
 							with this account.
 						</p>
